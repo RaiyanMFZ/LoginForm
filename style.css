@@ -1,0 +1,53 @@
+.LoginForm {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0 ,0, 1);
+}
+
+.inputForm {
+    margin-bottom: 15px;
+}
+
+.input{
+    width: 100%;
+    padding: 12px;
+    width: 775px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.submitForm {
+    text-align: center;
+}
+
+.submit{
+    width: 800px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: lawngreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.submit:hover {
+    background-color: lawngreen;
+}
+
+.checkboxArea{
+    text-align: left;
+    font-family: Arial;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
