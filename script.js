@@ -1,4 +1,13 @@
 const formContainer = document.getElementById("formContainer");
+const newPage = document.getElementById('newPage')
+
+function loadNewPage() {
+    const storedFirstname = localStorage.getItem('Firstname')
+    const storedLastname = localStorage.getItem('Lastname')
+    newPage.innerHTML = `
+    <h1>Willkommen ${storedFirstname} ${storedLastname}</h1>
+`
+}
 
 function loadSignUpForm() {
     formContainer.innerHTML = `
@@ -79,7 +88,7 @@ function loadLoginForm() {
         const storedPassword = localStorage.getItem("password");
 
         if (LoginEmail === storedEmail && LoginPassword === storedPassword) {
-            element.href = './NewPage.html';
+            window.location.href = './NewPage.html';
         } else {
             alert("Falsche Anmeldedaten");
         }
@@ -87,3 +96,4 @@ function loadLoginForm() {
 }
 
 loadSignUpForm();
+loadNewPage();
