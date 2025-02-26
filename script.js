@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
-        // Event-Listener für "Sign Up"
         document.getElementById("signup").addEventListener("click", function (event) {
             event.preventDefault();
             loadSignUpForm();
