@@ -44,6 +44,16 @@
 .checkboxArea{
     text-align: left;
     font-family: Arial;
+    margin-top: 10px;
+}
+
+.loginLink{
+    margin-top: 40px;
+}
+
+.LoginLink span a {
+    color: blue;
+    text-decoration: none;
 }
 
 .container{
@@ -51,3 +61,5 @@
     justify-content: center;
     align-items: center;
 }
+
+
