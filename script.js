@@ -1,6 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const formContainer = document.getElementById("formContainer");
+const formContainer = document.getElementById("formContainer");
+const registerButton = document.getElementsByClassName("submit")
+const loginButton = document.getElementById("login")
 
+    registerButton.addEventListener("click", function () {
+        const firstname = document.getElementById("Firstname").value
+        const lastname = document.getElementById("Lastname").value
+        const email = document.getElementById("email").value
+        const password =  document.getElementById("password").value
+
+        localStorage.setItem("Firstname", firstname)
+        localStorage.setItem("Lastname", lastname)
+        localStorage.setItem("email", email)
+        localStorage.setItem("password", password)
+
+    })
     function loadLoginForm() {
         formContainer.innerHTML = `
             <h1>Login</h1>
@@ -11,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <input type="password" class="input" id="loginPassword" placeholder="Password">
             </div>
             <div class="submitForm">
-                <button type="submit" class="submit">Login</button>
+                <button type="submit" class="submit" id="login">Login</button>
             </div>
             <div class="checkboxArea">
                 <input type="checkbox" class="checkbox">
@@ -58,4 +71,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     loadSignUpForm();
-});
