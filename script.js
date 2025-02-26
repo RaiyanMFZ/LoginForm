@@ -37,7 +37,7 @@ function loadSignUpForm() {
         loadLoginForm();
     });
 
-    const registerButton = document.getElementsByClassName("submit")[0];
+    const registerButton = document.getElementsByClassName("submit");
     registerButton.addEventListener("click", function () {
         const firstname = document.getElementById("Firstname").value;
         const lastname = document.getElementById("Lastname").value;
